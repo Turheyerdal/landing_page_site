@@ -1,0 +1,744 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран€ем отступы между €чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	font-family: 'Lato', sans-serif;/*font-family:'Roboto Condensed', sans-serif;*/
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* пор€док правил дл€ ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки --- ------*/
+
+
+.center-block-main{
+	max-width:1170px;
+	margin:0 auto;
+}
+
+header{
+		
+	background:rgba(7,7,7,0.3);
+	position:absolute;
+	z-index:2;
+	width:100%;
+		
+}
+
+.header-top{
+	padding:15px 0 25px 0;
+}
+.logo{
+	float:left;
+	
+}
+
+.menu{
+	font-family:'Droid Sans' sans-serif;
+	margin-top:25px;
+	float:right;
+	color:#fff;
+}
+
+.menu li {
+	font-size:0.875em;
+	float:left;
+	text-transform:uppercase;
+	margin-right:30px;
+}
+
+.menu li a{
+	
+	color:#fff;
+	text-decoration:none;
+}
+
+.menu li a:hover{
+	color:#4bcaff;
+	
+}
+
+
+
+.search-block{
+	
+	float:left;
+	margin-top:-3px;
+}
+
+.search-btn{
+	float:left;
+	margin:5px 5px 0 0;
+}
+
+.search{
+	float:left;
+	font-size:0.875em;
+	color:#7e7f84;
+	border:none;
+	line-height:1.4;
+}
+
+.my-slider img{
+ width:100%;;
+}
+
+.my-slider ul li{
+	border-bottom:4px solid #4bcaff;
+	font-size:0;
+	color:#fff;
+	position:relative;
+}
+
+
+.slide-text-wrapper{
+	position:absolute;
+	top:35%;
+	left:44%;
+	max-width:700px;
+}
+.my-slider ul li h2{
+	
+	font-weight:normal;
+	font-size:48px;
+	line-height:1.1;
+	margin-bottom:20px;
+}
+
+.my-slider ul li p{
+	
+	
+	font-size:16px;
+	line-height:1.1;
+}
+
+
+a.download-btn{
+	text-decoration:none;
+	color:#fff;
+	padding:20px 50px;
+	border:2px solid #fff;
+	border-radius:5px;
+	font-size:15px;
+	margin-top:30px;
+	display:inline-block;
+}
+
+a.download-btn:hover{
+	
+	color:#4bcaff;
+	
+	border:2px solid #4bcaff;
+	border-radius:0;
+	
+}
+ 
+
+.unslider-nav{
+	max-width:1170px;
+	margin:-19px auto 0 auto;
+	position:relative;
+	top:-15px;
+	
+}
+
+
+.block3-section{
+	background:#f9f9f9;
+	padding:30px 0 50px 0;
+	border:1px solid #e7e7e7;
+}
+
+.block3-section>h2{
+	font-size:2.25em;
+	font-weight:600;
+	color:#414042;
+	text-align:center;
+}
+
+.block3-section>h3{
+	font-size:1.25em;
+	font-weight:600;
+	margin-bottom:50px;
+	
+	text-align:center;
+}
+
+.block3-main {
+	margin-bottom:50px;
+}
+
+.block3-main article{
+	text-align:center;
+	float:left;
+	width:30%;
+	margin-left:5%;
+}
+
+.block3-main article:first-child{
+	
+	margin-left:0;
+}
+
+.block3-main article img{
+	
+	display:block;
+	margin:0 auto 20px auto;
+}
+
+
+.block3-main article h2{
+	text-transform:uppercase;
+	color:#414042;
+	font-size:1em;
+	
+	margin-bottom:20px;
+}
+
+.block3-main article h2 a{
+	text-decoration:none;
+	color:#414042;
+	font-weight:600;
+}
+
+.block3-main article h2 a:hover{
+	text-decoration:underline;
+
+}
+
+
+.block3-main article p{
+	
+	line-height:1.4;
+	font-size:0.875em;
+
+}
+
+
+.block4-section{
+	padding:30px 0 0 0;
+	margin-bottom:60px;
+}
+
+.block4-section >h2{
+	text-align:center;
+	color:#414042;
+	font-size:2.25em;
+	font-weight:600;
+}
+.block4-section >h3{
+	text-align:center;
+	color:#414042;
+	font-size:1.25em;
+	
+	margin-bottom:50px;
+}
+
+
+
+.block4-main{
+	
+}
+
+.block4-main article{
+	width:23%;
+	margin-left:2.6%;
+	float:left;
+}
+
+
+.block4-main article:first-child{
+	
+	margin-left:0;
+}
+
+
+.block4-main article img{
+	
+	display:block;
+	margin:0 auto;
+	
+}
+
+.block4-main-content{
+	padding:20px 20px 0 20px;
+	text-align:center;
+	
+}
+
+
+.block4-main-content p{
+
+	line-height:1.5;
+	font-size:0.8125em;
+	margin-bottom:15px;
+}
+p.price-basket{
+	
+	border-top:1px solid #eee;
+	font-size:0.875em;
+	color:#f45a40;
+	padding:15px 0;
+	margin-bottom:0;
+}
+
+.price-basket{
+	
+	margin-top:10px;
+}
+
+
+.price{
+	float:left;
+}
+.basket-btn{
+	float:right;
+}
+
+
+.video-section
+{
+	background:url(images/videosection.jpg) center top no-repeat;
+	padding:150px  0;
+	background-size:cover;
+}
+.video-main-text{
+	text-align:center;
+	color:#fff;
+}
+
+.video-main-text img{
+	cursor:pointer;
+	margin-bottom:20px;
+}
+
+.video-main-text h2{
+	line-height:1.1;
+	margin-bottom:20px;
+	font-size:48px;
+	font-weight:300;
+	
+}
+
+.video-main-text h2 span{
+	
+	font-weight:600;
+	
+}
+
+.video-main-text p{
+font-size:16px;
+font-weight:300;
+}
+
+
+.subscribe{
+	
+	background-color:#414042;
+	color:#fff;
+	text-align:center;
+	padding:30px 0;
+}
+
+
+.subscribe h2{
+	font-weight:600;
+	font-size:3.4375em;
+		margin-bottom:30px;
+}
+
+
+
+a.download-btn-blue {
+	text-transform:uppercase;
+	color:#414042;
+	padding:20px 50px;
+	background-color:#4bcaff;
+	text-decoration:none;
+	border-radius:5px;
+	display:inline-block;
+	margin:10px 0;
+	
+}
+
+a.download-btn-blue:hover {
+	
+	color:#fff;
+	
+}
+
+
+.contact-main{
+	
+	position:relative;
+	height:550px;
+}
+
+.contact-block{
+	border-radius:5px;
+	padding:30px 30px 10px 30px;
+	left:50%;
+	box-sizing:border-box;
+	margin-left:-160px;
+	position:absolute;
+	bottom:100px;
+	width:320px;
+	background:rgba(75,202,255,0.7);
+}
+
+.contact-block h2{
+	font-family:'Lato' sans-serif;
+	font-size:2.25em;
+	text-align:center;
+	margin-bottom:20px;
+	color:#fff;
+	
+	font-weight:600;
+}
+
+
+.ftrmail{
+	width:100%;
+	
+	font-size:0.75em;
+	margin-bottom:15px;
+	border:none;
+	padding:7px 20px;
+	box-sizing:border-box;
+	color:#d3d3d3;
+	text-align:center;
+	border-radius:5px;
+}
+
+.ftrtxt{
+	text-align:center;
+	border-radius:5px;
+	width:100%;
+	
+	font-size:0.75em;
+	margin-bottom:15px;
+	border:none;
+	padding:10px 20px;
+	box-sizing:border-box;
+	color:#d3d3d3;
+	resize:none;
+}
+
+.ftrsubmit{
+	
+	display:block;
+	margin:0 auto;
+	color:#72b3cc;
+	background:#414042;
+	border:none;
+	padding:10px 70px;
+	font-size:0.875em;
+	cursor:pointer;
+	border-radius:5px;
+	
+}
+
+
+
+
+.ftr{
+	
+	background:#2a2d34;
+	padding:40px 0;
+	
+}
+
+.ftr h2{
+	
+	
+	color:#fff;
+	font-size:1.325em;
+	font-family:'Roboto Condensed' sans-serif;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	
+}
+
+
+.ftr p{ 
+	
+	font-size:0.875em;
+	margin-bottom:20px;
+}
+
+.ftr h3{ 
+	
+	font-size:0.875em;
+	margin-bottom:5px;
+}
+
+.ftr h3 a{ 
+	
+	color:#fff;
+	text-decoration:none;
+}
+.ftr h3 a:hover{ 
+	
+	
+	text-decoration:underline;
+}
+
+
+
+.support{
+	
+	float:left;
+	width:47%;
+	margin-right:3%;
+	
+}
+
+.support a{
+	
+display:block;	
+color:#7e7f84;
+margin-bottom:5px;
+text-decoration:none;
+}
+
+.support a:hover{
+	
+text-decoration:underline;
+}
+
+
+
+@media screen and (max-width:1000px){
+	
+.my-slider ul li h2{
+
+	font-size:36px;
+	
+}
+
+.my-slider ul li p{
+
+	font-size:16px;
+ 
+}	
+
+}
+@media screen and (max-width:900px){
+	
+.my-slider ul li h2{
+	
+	top:100px;
+	
+	
+	font-size:2em;
+	
+}
+
+.my-slider ul li p{
+	
+	top:180px;
+ 
+}
+
+.search-block{
+	
+border-top:1px solid #eee;
+
+
+margin-top:10px;
+padding:7px 14px;
+}
+
+
+	
+}
+
+
+@media screen and (max-width:600px){
+
+
+.block3-main article{
+	width:95%;
+	float:none;
+	margin:0 2.5% 30px 2.5%;
+}
+
+
+
+.block3-main article:first-child{
+
+	margin:0 2.5%;
+}
+	
+}
+
+
+
+@media screen and (max-width:480px){
+	
+.my-slider ul li h2{
+	
+	top:50px;	
+	font-size:1.275em;
+	
+}
+
+.my-slider ul li p{
+	
+	top:110px;
+	font-size:0.875
+ 
+}	
+
+.block4-main article{
+	width:95%;
+	margin:0 2.5% 30px 2.5%;
+	overflow:hidden;
+	float:none;
+}
+
+
+
+.block4-main article:first-child{
+	
+	margin-left:2.5%;
+}
+
+	
+	
+	
+}
+
+
+@media screen and (max-width:410px){
+.header-top{
+	padding:10px 0;
+}
+
+.logo{
+	float:none;
+	text-align:center;
+	margin-bottom:10px;
+	
+	
+}
+
+.contact-basket{
+	float:none;
+	display:block;
+	margin:0 auto;
+}
+	
+
+	
+}
+
+
+@media screen and (max-width:360px){
+
+	.email-input{
+		float:none;
+		width:95%;
+		margin:0 2.5% 20px 2.5%;
+		box-sizing:border-box;
+		
+	}
+	
+	.submit-button{
+		margin-left:2.5%;
+		
+		
+	}
+	
+	.my-slider ul li h2{
+		top:30px;
+		font-size:1em;
+	}
+	.my-slider ul li p{
+		top:80px;
+		
+	}
+}
